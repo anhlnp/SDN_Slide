@@ -1,0 +1,6 @@
+<h1>Welcome to the Student Portal</h1>
+{{#if user}}
+    <p>Hello, {{user.username}}! <a href="/profile">Go to Profile</a> | <a href="/logout">Logout</a></p>
+{{else}}
+    <a href="/register">Register</a> | <a href="/login">Login</a>
+{{/if}}
